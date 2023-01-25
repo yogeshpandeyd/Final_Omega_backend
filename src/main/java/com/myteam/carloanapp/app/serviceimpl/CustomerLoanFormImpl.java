@@ -21,6 +21,7 @@ public class CustomerLoanFormImpl implements CustomerLoanFormI {
 	@Override
 	public Customer saveCustomerDetails(Customer customer) {
 		customer.setStatus("Loan_Form_Filled");
+		customer.setCustomerLoanTeanre(1d);
 		
 			return customerRepo.save(customer);
 		
